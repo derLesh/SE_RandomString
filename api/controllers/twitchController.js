@@ -5,8 +5,8 @@ exports.welcome = function(req, res) {
 };
 
 exports.random = function(req, res) {
-   	var rng = Math.random().toString(36).substring(1, 30) + Math.random().toString(36).substring(1, 30);
+	var length = req.query.length
+	var rng = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, length);
 	
-	req.query("${settitle " + rng + "}");
-    res.send("Here is your random title: " + rng);  
+    	res.send(rng);
 }
