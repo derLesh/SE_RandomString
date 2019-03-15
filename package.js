@@ -1,16 +1,15 @@
 {
   "name": "SE_RandomString",
-  "version": "0.1",
-  "description": "RESTful API for lesh.gq",
+  "version": "0.2",
+  "description": "REST API for lesh.gq",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "release": "release-it -n"
+    "start": "nodemon server.js"
   },
   "private": true,
   "keywords": [
-    "RESTful",
+    "REST",
     "API",
     "Lesh",
     "StreamElements"
