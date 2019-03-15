@@ -1,10 +1,9 @@
 "use strict";
-var MD5 = require('md5.js');
 
 exports.welcome = function(req, res) {
-    res.send("helo pepeL");
+    res.send("MrDestructoid Booting up ... Welcome Twitch Chat");
 };
 
 exports.random = function(req, res) {
-    res.send(Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15););   
+    res.send("Here is your random title: " + Math.random().toString(36).substring(1, 30) + Math.random().toString(36).substring(1, 30));  
 }
