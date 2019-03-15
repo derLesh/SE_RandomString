@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var errorHandler = require('api-error-handler');
 var helmet = require('helmet');
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 69;
 var app = express();
 
 // Middlewares
@@ -28,4 +28,4 @@ app.use(function(req, res) {
 // Start the server
 app.listen(port);
 
-console.log("api.chronophylos.com RESTful API server started on: " + port);
+console.log("Successfully started api.lesh.gq on port: " + port);
